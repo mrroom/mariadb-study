@@ -2,10 +2,12 @@
 
 - MariaDB [(none)]>show engines;  
 
+~~~
 +--------------------+---------+----------------------------------------------------------------------------+--------------+------+------------+ 
 | Engine | Support | Comment | Transactions | XA | Savepoints | 
 +--------------------+---------+----------------------------------------------------------------------------+--------------+------+------------+ 
 | CONNECT | YES | Management of External Data (SQL/MED), including many file formats | NO | NO | NO |
+~~~
 
 - MariaDB [(none)]> INSTALL SONAME 'ha_connect';
 
