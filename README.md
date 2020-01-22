@@ -1,2 +1,2 @@
-# mariadb-study
-mariadb study
+# mariadb 공부 문서
+
