@@ -1,12 +1,12 @@
 ## CONNECT 설치([[MySQL] CONNECT Storage Engine Oracle연동](https://cirius.tistory.com/1609))
 
 - MariaDB [(none)]>show engines;  
-~~~
+
 +--------------------+---------+----------------------------------------------------------------------------+--------------+------+------------+ 
 | Engine | Support | Comment | Transactions | XA | Savepoints | 
 +--------------------+---------+----------------------------------------------------------------------------+--------------+------+------------+ 
 | CONNECT | YES | Management of External Data (SQL/MED), including many file formats | NO | NO | NO |
-~~~
+
 - MariaDB [(none)]> INSTALL SONAME 'ha_connect';
 
 ## JSON table type 만들기
