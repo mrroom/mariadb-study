@@ -9,7 +9,7 @@
 | CONNECT | YES | Management of External Data (SQL/MED), including many file formats | NO | NO | NO |
 ~~~
 
-- MariaDB [(none)]> INSTALL SONAME 'ha_connect';
+- MariaDB [(none)]> INSTALL SONAME 'ha_connect'; (or Windows : INSTALL SONAME 'ha_connect.dll')
 
 ## JSON table type 만들기
   1. xxx.json 파일을 MariaDB Data 폴더 아래에 빈값으로 만든다
