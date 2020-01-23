@@ -6,10 +6,37 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.css" rel="stylesheet"/>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.js"></script>
+	<script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
 </head>
 <body>
 	<div>
-    <h1>MarkDown 테스트입니다</h1>
-  </div>
+    		<h1>MarkDown 테스트입니다</h1>
+  	</div>
+	<div id="mark_down">
+	</div>
 </body>
+<script type="text/javascript">
+
+	$(function() {
+
+		load_markdown("README.md");
+		
+	});
+	
+	//README.md
+	function load_markdown(file) {
+	
+		$.get(file, function(data) {
+        		convert_html(data);
+		},"text");
+		
+	}
+	
+	function convert_html(data) {
+		
+		var converter = new showdown.Converter();
+    		$("#mark_down").hrml(converter.makeHtml(data));
+	}
+
+</script>
 </html>
